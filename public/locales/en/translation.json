@@ -1,0 +1,23 @@
+{
+  "en": {
+    "translation": {
+      "nav": {
+        "dashboard": "Dashboard",
+        "jobs": "Jobs",
+        "logout": "Logout"
+      },
+      "login": {
+        "title": "Admin Login",
+        "email": "Email",
+        "password": "Password",
+        "submit": "Sign In",
+        "invalidEmail": "Invalid email format",
+        "required": "Required"
+      },
+      "errors": {
+        "unauthorized": "Unauthorized access",
+        "serverError": "Server error"
+      }
+    }
+  }
+}
