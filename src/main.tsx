@@ -8,6 +8,9 @@ import "./index.css";
 import AdminLayout from "./components/AdminLayout";
 import ProtectedRoute from "./components/ProtectedRoute";
 import LoginPage from "./pages/LoginPage";
+import DashboardPage from "./pages/DashboardPage";
+import AdminJobsPage from "./pages/AdminJobsPage";
+import JobFormPage from "./pages/JobFormPage";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -17,8 +20,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/login" element={<LoginPage />} />
           <Route element={<ProtectedRoute />}>
             <Route element={<AdminLayout />}>
-              <Route path="/dashboard" element={<h1>Dashboard</h1>} />
-              <Route path="/jobs" element={<h1>Job Management</h1>} />
+              <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/jobs" element={<AdminJobsPage />} />
+              <Route path="/jobs/create" element={<JobFormPage />} />
+              <Route path="/jobs/:uuid/edit" element={<JobFormPage />} />
             </Route>
           </Route>
           <Route path="*" element={<Navigate to="/dashboard" replace />} />

@@ -44,11 +44,15 @@ const metaSlice = createSlice({
 
 export const { setAuth, clearAuth } = authSlice.actions;
 export const { setMeta } = metaSlice.actions;
+import adminJobsReducer from "./slices/adminJobsSlice";
+
+// ...
 
 export const store = configureStore({
   reducer: {
     auth: authSlice.reducer,
     meta: metaSlice.reducer,
+    adminJobs: adminJobsReducer,
   },
 });
 

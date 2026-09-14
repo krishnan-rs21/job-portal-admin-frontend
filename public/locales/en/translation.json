@@ -6,6 +6,21 @@
         "jobs": "Jobs",
         "logout": "Logout"
       },
+      "dashboard": {
+        "totalJobs": "Total Jobs",
+        "createNewJob": "Create New Job"
+      },
+      "jobs": {
+        "title": "Title",
+        "status": "Status",
+        "actions": "Actions",
+        "active": "Active",
+        "archived": "Archived",
+        "toggle": "Toggle",
+        "edit": "Edit",
+        "delete": "Delete",
+        "submit": "Submit"
+      },
       "login": {
         "title": "Admin Login",
         "email": "Email",
