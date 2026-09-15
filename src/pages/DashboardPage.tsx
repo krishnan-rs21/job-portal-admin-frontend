@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAdminJobs } from "../store/slices/adminJobsSlice";
-import { RootState, AppDispatch } from "../store";
+import type { AppDispatch, RootState } from "../store";
 import { Link } from "react-router-dom";
 
 const DashboardPage: React.FC = () => {

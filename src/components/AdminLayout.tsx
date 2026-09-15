@@ -2,7 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { RootState, AppDispatch, clearAuth } from "../store";
+import { clearAuth } from "../store";
+import type { AppDispatch, RootState } from "../store";
 
 const AdminLayout: React.FC = () => {
   const { t } = useTranslation();
