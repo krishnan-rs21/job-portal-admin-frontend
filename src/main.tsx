@@ -11,6 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import AdminJobsPage from "./pages/AdminJobsPage";
 import JobFormPage from "./pages/JobFormPage";
+import ApplicationsPage from "./pages/ApplicationsPage";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -25,6 +26,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                 <Route path="/jobs" element={<AdminJobsPage />} />
                 <Route path="/jobs/create" element={<JobFormPage />} />
                 <Route path="/jobs/:uuid/edit" element={<JobFormPage />} />
+                <Route path="/jobs/:uuid/applications" element={<ApplicationsPage />} />
+                <Route path="/applications" element={<ApplicationsPage />} />
               </Route>
             </Route>
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
